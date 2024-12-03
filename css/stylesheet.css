@@ -1,0 +1,24 @@
+/*
+VARIABLES
+================================================ */
+/* variables:変数。色やフォントを一括で定義 */
+:root {
+    --primary-font: 'Kosugi', sans-serif;
+    --background-color: #e0f7ff;
+    --header-color: #f0f4f4f8;
+    --header-title-color:#424de7;
+    --text-color:#1a1a1a;
+    --button-color:#007bff;
+    --button-hover-color:#0056b3;
+    --border-radius:10px;
+}
+
+/*
+GLABAL STYLES
+================================================ */
+/* 全体に適用するスタイル */
+body {
+    font-family: var(--primary-font);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
