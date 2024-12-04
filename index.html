@@ -10,18 +10,22 @@
   <!-- <link rel="icon" type="image/png" href="./img/fab.png"> -->
   
   <link rel="stylesheet" href="css/stylesheet.css">
-      <!-- Google Fontsの設定 -->
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link href="https://fonts.googleapis.com/css2?family=Kosugi&display=swap" rel="stylesheet">
-
+  <!-- Google Fontsの設定 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi&display=swap" rel="stylesheet">
+  <!-- defer「必ずページの準備が終わってから動いてね！」 -->
+    <script src="script.js" defer></script>
 </head>
 <body>
 
 <!-- Advice Generate
 ================================================ -->
-  <button id="adBtn">アドバイスください</button>
+<!-- アドバイス生成ボタン -->
+  <button id="addBtn">アドバイスください</button>
+  <!-- アドバイス表示エリア -->
   <div id="display"></div>
+  <!-- お気に入り表示エリア -->
   <div id="favoriteDispay"></div>
 
 </body>

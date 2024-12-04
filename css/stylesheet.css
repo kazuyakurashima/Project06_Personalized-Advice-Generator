@@ -31,11 +31,22 @@ h1,h2,h3,h4,h5,h6 {
 /*
 SECTION STYLES
 ================================================ */
-#adBtn {
-    font-weight:bold;
+#addBtn {
+    /* font-weight:bold; */
     background-color: var(--button-color);
     color:#fff;
     cursor:pointer;
     transition: background-color 0.3s;
     margin-top: 20px;
+    padding: 10px;
+}
+
+/* クリック感を出しますよ */
+#addBtn:active {
+    transform: scale(0.95);
+}
+
+/* フーバーの時に色を濃くしてます */
+#addBtn:hover {
+    background-color: var(--button-hover-color);
 }

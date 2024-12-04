@@ -1,6 +1,9 @@
-// Add Habit Event
+// add Btn Event
 // ================================================
-
+document.getElementById("addBtn").addEventListener("click", ()=> {
+    console.log("ボタンがクリックされたよ")
+    
+});
 
 // Display Habits Function
 // ================================================
