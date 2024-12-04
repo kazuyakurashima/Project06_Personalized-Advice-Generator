@@ -14,11 +14,28 @@ VARIABLES
 }
 
 /*
-GLABAL STYLES
+GLOBAL STYLES
 ================================================ */
 /* 全体に適用するスタイル */
 body {
     font-family: var(--primary-font);
     background-color: var(--background-color);
     color: var(--text-color);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color:var(--text-color);
+    text-align:center;
+}
+
+/*
+SECTION STYLES
+================================================ */
+#adBtn {
+    font-weight:bold;
+    background-color: var(--button-color);
+    color:#fff;
+    cursor:pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
 }
