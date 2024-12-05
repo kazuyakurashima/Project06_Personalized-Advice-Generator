@@ -13,8 +13,11 @@ document.getElementById("addBtn").addEventListener("click", ()=> {
         })
         .then((data) => {
             console.log(data.slip.advice);
+            // slipは、apiから返されるデータで、「アドバイスに関する情報」をまとめているオブジェクトの名前。
+            // slipには、id,adviceがある。
             const advice = data.slip.advice;
             document.getElementById("display").innerText = advice;
+            // displayというidを見つけ、ここにinnnerText（テキスト）を設定します。そのテキストは、advice
         })
         .catch((error) => {
             console.error("エラーが発生しました：", error);
