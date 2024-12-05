@@ -2,8 +2,25 @@
 // ================================================
 document.getElementById("addBtn").addEventListener("click", ()=> {
     console.log("ボタンがクリックされたよ")
-    
+    // APIからデータを取得
+    fetch("https://api.adviceslip.com/advice")
+        .then((response) => {
+        // responseは、fetchでデータリクエストした返事。お返事の「箱」
+        // お返事はJSON（JavaScript Object Notation（JavaScriptオブジェクト表記）、すなわち「文字列」で帰ってくる）
+            console.log(response);
+            return response.json();
+            // JSONのテキストをJavaScriptオブジェクト（プロパティ（データの名前と値のペア）を持つデータ構造）に変換します。
+        })
+        .then((data) => {
+            console.log(data.slip.advice);
+            const advice = data.slip.advice;
+            document.getElementById("display").innerText = advice;
+        })
+        .catch((error) => {
+            console.error("エラーが発生しました：", error);
+        });
 });
+
 
 // Display Habits Function
 // ================================================
