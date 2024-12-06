@@ -32,7 +32,7 @@ async function fetchAdvice() {
     // 翻訳関数の定義
     async function translateToJapanese(text) {
         // これがAPIキーです！！！
-        const apiKey ="a51bbc7f-a18f-46ab-b82c-68d6b95ffb78:fx"
+        const apiKey ="a
         // deepLに翻訳させます。target_lag=JAで日本語にしてます
         const url = `https://api-free.deepl.com/v2/translate?auth_key=${apiKey}&text=${encodeURIComponent(text)}&target_lang=JA`;
 
